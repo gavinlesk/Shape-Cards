@@ -1,0 +1,26 @@
+.Shape {
+  display: flex;
+  flex-direction: column;
+  height:100%;
+}
+
+.Shape-split {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid black;
+  flex-direction: row;
+  flex: 1;
+}
+
+.Shape-left{
+  order: -1;
+  flex: 0 0 250px;
+  border-right: 1px solid black;
+  padding:10px;
+}
+.Shape-right {
+  margin-top:20px;
+  flex: 1;
+  min-width:350px;
+  padding:10px;
+}
