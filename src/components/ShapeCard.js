@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Surface from './../Surface';
 
 import './ShapeCard.css';
 
@@ -8,7 +9,7 @@ export default class Shape extends Component {
     
    constructor() {
       super();
-      this.state = {constraintValues: {}}
+      this.state = {constraintValues: {}, rotation:0}
     }
 
     componentWillMount() {
@@ -38,7 +39,8 @@ export default class Shape extends Component {
     updateCanvas() {
       const ctx = this.refs.canvas.getContext('2d');
       ctx.clearRect(0, 0, this.props.width, this.props.height);
-      this.props.renderFunc(ctx, this.state.constraintValues);
+      //ctx.rotate(this.state.rotation * (Math.PI/180));
+      this.props.renderFunc( /*new Surface(ctx)*/ ctx, this.state.constraintValues);
     }
 
     render() {
@@ -69,6 +71,19 @@ export default class Shape extends Component {
                     /> 
                  </div>);  
               } )}
+              {
+              //<span>Rotation: {this.state.rotation}</span>
+              // <Slider
+              //       sliderStyle={{width:'75%', marginLeft: 'auto', marginRight: 'auto', marginTop:10, marginBottom:10}}
+              //       step={1}
+              //       min={0}
+              //       max={360}
+              //       defaultValue={0}
+              //       value={0}
+              //       onChange={ (event, value) => {
+              //         this.setState({rotation: value})}}
+              //     /> 
+              }
             </div>
             <div className="Shape-right">
               <canvas ref="canvas" width={this.props.width} height={this.props.height}/>

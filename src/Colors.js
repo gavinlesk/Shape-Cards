@@ -6,7 +6,10 @@ export default {
   yellow: '#F1C40F',
   orange: '#F39C12',
   gray: '#95A5A6',
-  blue: '#2980B9',
   white: '#FFFFFF',
-  black: '#000000'
+  black: '#000000',
+  lightBlue: '#99ddff',
+  blue: '#33bbff',
+  darkBlue:'#005580',
+  lime:'#00ff00'
 };

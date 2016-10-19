@@ -58,10 +58,14 @@ class App extends Component {
             <div className="App-split">
               <div className="App-left">
                 {
-                    Object.keys(Shapes).map(k => {
-                        const shapeDef = Shapes[k];
+                    Object.keys(Shapes)
+                          .map(k => ({key: k, shapeDef: Shapes[k]}))
+                          .sort((a, b) => a.shapeDef.title.localeCompare(b.shapeDef.title))
+                          .map(kvp => {
+                        const k = kvp.key;
+                        const shapeDef = kvp.shapeDef;
                         return (
-                          <div style={{marginBottom:10}}>
+                          <div key={k} style={{marginBottom:10}}>
                             <a key={k} href="#" onClick={
                               () => this.setState({shape: k})
                               }>{shapeDef.title}
