@@ -140,7 +140,7 @@ const Shapes = {
   //----------------------------------------------------------------------------
   rectangle: {
     title: 'Quadrilateral: Rectangle',
-    definition: '.....',
+    definition: 'A rectangle has four points at four corners with two sides of equal length opposite each other, and two other sides of equal length opposite each other. All four corners are right angles.',
     author: 'Gavin Lesk',
     constraints: {
       length: {
