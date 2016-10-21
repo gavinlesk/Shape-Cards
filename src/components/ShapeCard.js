@@ -47,7 +47,7 @@ export default class Shape extends Component {
       return (
         <div className="Shape">
           <h1 style={{textAlign:'left', marginLeft: 25, marginRight: 25}}>{this.props.title}</h1>
-          <h3 style={{textAlign:'left', marginLeft: 25, marginRight: 25}}>{this.props.definition}</h3>
+          <span style={{textAlign:'left', marginLeft: 25, marginRight: 25}}>{this.props.definition}</span>
           <h5 style={{textAlign:'left', marginLeft: 25, marginRight: 25}}>Coded by: {this.props.author}</h5>
           <div className="Shape-split">
             <div className="Shape-left">

@@ -119,7 +119,7 @@ const Shapes = {
   // Square
   //----------------------------------------------------------------------------
   square: {
-    title: 'Quadralateral: Square',
+    title: 'Quadrilateral: Square',
     definition: 'A square is a quadralateral (a box) with four equal sides where each of the four angles is a right angle.',
     author: 'Dad (as an example)',
     constraints: {
@@ -139,7 +139,7 @@ const Shapes = {
   // Rectangle
   //----------------------------------------------------------------------------
   rectangle: {
-    title: 'Quadralateral: Rectangle',
+    title: 'Quadrilateral: Rectangle',
     definition: '.....',
     author: 'Gavin Lesk',
     constraints: {
@@ -321,7 +321,7 @@ const Shapes = {
   //----------------------------------------------------------------------------
   tetrahedron: {
     title: 'Tetrahedron',
-    definition: 'A solid having four plane triangular faces; a triangular pyramid',
+    definition: 'A three dimensional shape having four plane triangular faces; a triangular pyramid. The fourth triangle cannot be seen and is on the bottom or side depending on the way you look at it.',
     author: 'Gavin Lesk + Dad (The Skew)',
     constraints: {
       height: {
@@ -360,11 +360,6 @@ const Shapes = {
       const b = { x: 0, y: height };
       const c = { x: base, y: height };
       const z = { x: base * (x_skew / 100), y: height * (y_skew / 100) };
-      //const z = {x : base / 2, y : height / 2};
-      // console.log(a);
-      // console.log(b);
-      // console.log(c);
-      // console.log(z);
 
       //left side triangle
       surface.beginPath();
@@ -408,7 +403,7 @@ const Shapes = {
   // Rhombus
   //----------------------------------------------------------------------------
   rhombus: {
-    title: 'Quadralateral: Rhombus',
+    title: 'Quadrilateral: Rhombus',
     definition: 'A parellelogram that has a pair of equal acute angles opposite each other and a pair of equal obtuse angles opposite each other.',
     author: 'Gavin Lesk',
     constraints: {
@@ -449,7 +444,7 @@ const Shapes = {
   //----------------------------------------------------------------------------
   acuteangle: CreateAngleInCircleShape(
     'Angle: Acute',
-    'A angle smaller than 90 degrees.',
+    'A angle smaller than 90 degrees. You will always remember it as the small angle because it is the cute angle',
     'Gavin Lesk',
     1,
     89),
@@ -459,7 +454,7 @@ const Shapes = {
   //----------------------------------------------------------------------------
   rightangle: CreateAngleInCircleShape(
     'Angle: Right',
-    'A angle that measures 90 degrees.',
+    'A angle that measures 90 degrees. Also the right angle is always 1/4 of a circle because 90 degrees is 1/4 of 360 degrees.',
     'Gavin Lesk',
     90,
     90),
@@ -469,7 +464,7 @@ const Shapes = {
   //----------------------------------------------------------------------------
   straightangle: CreateAngleInCircleShape(
     'Angle: Straight',
-    'A angle that measures 180 degrees.',
+    'A angle that measures 180 degrees. Also known as a straight line.',
     'Gavin Lesk',
     180,
     180),
@@ -498,8 +493,8 @@ const Shapes = {
   //parellelogram
   //----------------------------------------------------------------------------
   parallelogram: {
-    title: 'Quadralateral: Parallelogram',
-    definition: 'A  four sided figure with oppositesides parellel.',
+    title: 'Quadrilateral: Parallelogram',
+    definition: 'A  four sided figure with opposite sides parellel.',
     author: 'Gavin Lesk',
     constraints: {
       length: {
@@ -544,7 +539,7 @@ const Shapes = {
   //----------------------------------------------------------------------------
   pentagon: {
     title: 'Polygon: Pentagon',
-    definition: 'A plane figure with five straight sides where all sides are the same length.',
+    definition: 'A polygon figure with five straight sides where all sides are the same length.',
     author: 'Gavin Lesk',
     constraints: {
       length: {
@@ -563,7 +558,7 @@ const Shapes = {
   //----------------------------------------------------------------------------
   hexagon: {
     title: 'Polygon: Hexagon',
-    definition: 'A plane figure with six straight sides.',
+    definition: 'A polygon figure with six straight sides.',
     author: 'Gavin Lesk',
     constraints: {
         length: {
@@ -582,7 +577,7 @@ const Shapes = {
   //----------------------------------------------------------------------------
   polygon: {
     title: 'Polygon',
-    definition: '....',
+    definition: 'A two dimensional shape with at least three straight sides. Triangles, rectangles, and pentagon are examples of a polygon. If you change the sides you transform the whole shape.',
     author: 'Gavin Lesk',
     constraints: {
         sides: {
@@ -602,26 +597,12 @@ const Shapes = {
   },
 
   //----------------------------------------------------------------------------
-  // trapizoid
+  // quadrelateral
   //----------------------------------------------------------------------------
-  // trapizoid: {
-  //   title: 'Trapizoid',
-  //   definition: 'A quadralateral with only one pair of parellel sides.',
-  //   author: 'Gavin Lesk',
-  //   constraints: {
-  //   },
-  //   render: function (surface, {height, width}) {
-  //     //ToDo
-  //   }
-  // },
-
-  //----------------------------------------------------------------------------
-  // quadralateral
-  //----------------------------------------------------------------------------
-  quadralateral: {
-    title: 'Quadralateral',
-    definition: 'A four sided figure that has four straight sides.',
-    author: 'Gavin Lesk',
+  quadrilateral: {
+    title: 'Quadrilateral',
+    definition: 'A four sided figure that has four straight sides. Some examples are squares, rectangles, parallelogram and rhombuses, go check them all out in the quadrilatural section.',
+    author: 'Trickery by Dad',
     constraints: {
       randomize: {
         defaultValue: 50,
@@ -652,7 +633,7 @@ const Shapes = {
   //----------------------------------------------------------------------------
   perpendicularlines: {
     title: 'Line: Perpendicular',
-    definition: 'When two lines meet to form a 90 degree angle.',
+    definition: 'When two lines meet to form a 90 degree angle. It creates the shape of a uppside down capital "T"',
     author: 'Gavin Lesk',
     constraints: {
       width: {
